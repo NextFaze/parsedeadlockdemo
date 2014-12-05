@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ParseDeadlockExample</string>
+    <string name="instructions">This app calls Parse methods from two AsyncTasks running on background threads.
+        The tasks publish results to the UI thread, which updates the counters below.
+        \n\nIt is expected that the call to getObjectId() should never deadlock. If it does deadlock, the progress spinner will freeze so that you can easily see when the main thread locks up.
+        \n\nNote that the app will also crash due to NullPointerExceptions in Parse code, but that is unrelated to the deadlock.</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
